@@ -38,8 +38,8 @@ First we will configure rabbitmq and redis which are the backbone services. Star
 
  systemctl start redis
  systemctl enable redis
- systemctl start rabbitmq
- systemctl enable rabbitmq
+ systemctl start rabbitmq-server
+ systemctl enable rabbitmq-server
 
 Now we will configure a new rabbitmq virtualhost for sensu, with a username and password combination that can access it.
 
